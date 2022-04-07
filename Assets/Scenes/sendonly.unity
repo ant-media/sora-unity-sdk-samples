@@ -537,7 +537,7 @@ MonoBehaviour:
   scrollViewContent: {fileID: 0}
   baseContent: {fileID: 0}
   signalingUrl: wss://domain/WebRTCAppEE/websocket
-  channelId: streamIdHere
+  channelId: teststream123
   signalingKey: 
   captureUnityCamera: 0
   capturedCamera: {fileID: 688396451}

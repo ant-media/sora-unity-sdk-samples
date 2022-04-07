@@ -40,7 +40,7 @@ public class SoraSample : MonoBehaviour
     public bool captureUnityCamera;
     public Camera capturedCamera;
 
-    public Sora.VideoCodec videoCodec = Sora.VideoCodec.VP9;
+    public Sora.VideoCodec videoCodec = Sora.VideoCodec.H264;
 
     public bool unityAudioInput = false;
     public AudioSource audioSourceInput;
@@ -137,7 +137,7 @@ public class SoraSample : MonoBehaviour
             {
                 continue;
             }
-			//sora.SendDataChannelMessage("testmessage");//Call this anywhere else to send datachannel messages. This is here to send test messages to ensure native library and unity application comm successful.
+			sora.SendDataChannelMessage("testmessage");//Call this anywhere else to send datachannel messages. This is here to send test messages to ensure native library and unity application comm successful.
             sora.GetStats((stats) =>
             {
                 Debug.LogFormat("GetStats: {0}", stats);

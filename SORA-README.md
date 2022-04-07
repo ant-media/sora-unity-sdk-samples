@@ -5,37 +5,37 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Actions Status](https://github.com/shiguredo/sora-unity-sdk/workflows/build/badge.svg)](https://github.com/shiguredo/sora-unity-sdk/actions)
 
-Sora Unity SDK は [WebRTC SFU Sora](https://sora.shiguredo.jp/) の Unity クライアントアプリケーションを開発するためのライブラリです。
+Sora Unity SDK [WebRTC SFU Sora](https://sora.shiguredo.jp/) A library for developing Unity client applications for.
 
 ## About Support
 
-We check PRs or Issues only when written in JAPANESE.
+We check PRs or Issues only when written in ENGLISH.
 In other languages, we won't be able to deal with them. Thank you for your understanding.
 
-## 時雨堂のオープンソースソフトウェアについて
+## About AntMedia's open source software
 
-利用前に https://github.com/shiguredo/oss をお読みください。
+Before use https://github.com/ant-media/sora-unity-sdk-samples Please read.
 
-## 利用方法
+## How to use
 
-Sora Unity SDK を使ってみたい人は [USE.md](doc/USE.md) をお読みください。
+Sora Unity SDK For those who want to use [README.md](SORA-README.md) Please read.
 
-## ビルド方法
+## How to build
 
-- Windows でのビルド方法は [BUILD_WINDOWS.md](doc/BUILD_WINDOWS.md) をお読みください
-- macOS でのビルド方法は [BUILD_MACOS.md](doc/BUILD_MACOS.md) をお読みください
+- How to build with Windows please read[BUILD_WINDOWS.md](doc/BUILD_WINDOWS.md)
+- How to build with macOS please read[BUILD_MACOS.md](doc/BUILD_MACOS.md) 
 
-## サンプル
+## sample
 
-[shiguredo/sora\-unity\-sdk\-samples: WebRTC SFU Sora Unity SDK サンプル集](https://github.com/shiguredo/sora-unity-sdk-samples)
+[AntMedia/sora\-unity\-sdk\-samples: WebRTC SFU Sora Unity SDK Sample collection](https://github.com/ant-media/sora-unity-sdk-samples)
 
-### サンプル動作例
+### Sample operation example
 
-- [「こんな感じに Unity のカメラ映像を WebRTC で配信できるようになりました https://t\.co/R98ZmZTFOK」 / Twitter](https://twitter.com/melponn/status/1193406538494275592?s=20)
-- [「ちゃんとリアルタイムで配信してます（モーション作るのが面倒だったのでシーンエディタから動かしてる）。Unity 側が配信で、ブラウザ（右上）で受信してる。 https://t\.co/TIL7NYroZm」 / Twitter](https://twitter.com/melponn/status/1193411591183552512?s=20)
-- [「Momo (on Jetson Nano) -> Sora-Labo -> Sora-Unity と Sora-Js 同時受信。ここまでがお手軽すぎてやばい。」 / Twitter](https://twitter.com/izmhrats/status/1203299775354851328?s=20)
+- [ "It is now possible to distribute Unity camera images via WebRTC like this https://t\.co/R98ZmZTFOK" / Twitter](https://twitter.com/melponn/status/1193406538494275592?s=20)
+- ["It's delivered in real time properly (I'm moving it from the scene editor because it was troublesome to make motion)。Unity The side is delivering and receiving with the browser (upper right)。 https://t\.co/TIL7NYroZm」 / Twitter](https://twitter.com/melponn/status/1193411591183552512?s=20)
+- [「Momo (on Jetson Nano) -> Sora-Labo -> Sora-Unity And Sora-Js simultaneous reception. This is too easy and dangerous.  / Twitter](https://twitter.com/izmhrats/status/1203299775354851328?s=20)
 
-## 対応 Unity バージョン
+## Supported Unity versions
 
 - Unity 2019.1
 - Unity 2019.2
@@ -43,101 +43,102 @@ Sora Unity SDK を使ってみたい人は [USE.md](doc/USE.md) をお読みく�
 - Unity 2019.4
 - Unity 2020.1
 
-## 対応プラットフォーム
+## Supported platforms
 
 - Windows 10 1809 x86_64 以降
 - macOS 10.15 x86_64 以降
 - Android 7 以降
 - iOS 10 以降
 
-## 対応機能
+## Corresponding function
 
-- Windows への対応
-- macOS への対応
-- Android への対応
-- iOS 対応
-- Unity のカメラ映像を取得し Sora で送信
-- カメラから映像を取得し Sora に送信
-- カメラから映像を取得し Unity アプリに出力
-- マイクから音声を取得し Sora に送信
-- マイクから音声を取得し Unity アプリに出力
-- Unity アプリで Sora からの音声を受信
-- Unity アプリで Sora からの映像を受信
-- Unity アプリで Sora からの音声を再生
-- ソフトウェアエンコード/デコード VP8 / VP9 への対応
-- Opus への対応
-- デバイス指定機能
-- マイクの代わりに Unity からのオーディオ出力
-- Unity カメラからの映像取得に対応
-- Unity 側で受信したオーディオの再生に対応
-- Sora から受信した音声を Unity アプリに出力
-- Sora から受信した映像を Unity アプリに出力
-- Sora マルチストリーム機能への対応
-- Sora シグナリング通知への対応
-- Sora メタデータへの対応
-- Sora シグナリング開始時の音声コーデック/ビットレート指定に対応
-- Sora シグナリング開始時の映像コーデック/ビットレート指定に対応
-- シグナリング通知への対応
+--Support for Windows
+--Support for macOS
+--Compatible with Android
+--iOS compatible
+--Get Unity camera footage and send with Sora
+--Get video from camera and send to Sora
+--Get video from camera and output to Unity app
+--Get audio from microphone and send to Sora
+--Get audio from microphone and output to Unity app
+--Receive audio from Sora in Unity app
+--Receive video from Sora with the Unity app
+--Play audio from Sora in Unity app
+--Software encoding / decoding Support for VP8 / VP9
+--Support for Opus
+--Device specification function
+--Audio output from Unity instead of microphone
+--Supports video acquisition from Unity camera
+--Supports playback of audio received on the Unity side
+--Output the audio received from Sora to the Unity app
+--Output the video received from Sora to the Unity app
+--Support for Sora multi-stream function
+--Correspondence to Sora signaling notification
+--Support for Sora metadata
+--Supports audio codec / bit rate specification at the start of Sora signaling
+--Supports video codec / bit rate specification at the start of Sora signaling
+--Correspondence to signaling notification
+
 - Apple VideoToolbox
-    - H.264 ハードウェアエンコードへの対応
-    - H.264 ハードウェアデコードへの対応
+    --Support for H.264 hardware encoding
+    --Support for H.264 hardware decoding
 - NVIDIA VIDEO CODEC SDK
-    - Windows 版
-        - H.264 のハードウェアエンコードへの対応
-        - H.264 のハードウェアデコードへの対応
+    - Windows Version
+       --Support for H.264 hardware encoding
+       --Support for H.264 hardware decoding
 
-## H.264 の利用について
+##  About the use of H.264
 
-Sora Unity SDK ではソフトウェアでの H.264 エンコード/デコードの利用はできません。
-これは H.264 のソフトウェアエンコーダ/デコーダを含んで配布した場合はライセンス費用が発生することから、無効にしているためです。
+H.264 encoding / decoding is not available in software with the Sora Unity SDK.
+This is because if you distribute the software including the H.264 software encoder / decoder, you will be charged a license fee, so it is disabled.
 
-そのため Windows では NVIDIA VIDEO CODEC SDK 、macOS では VideoToolbox を利用し、H.264 のエンコード/デコードを実現しています。また Android でも H.264 ハードウェアエンコーダを利用します。
+Therefore, H.264 encoding / decoding is realized by using NVIDIA VIDEO CODEC SDK on Windows and VideoToolbox on macOS. Android also uses the H.264 hardware encoder.
 
-詳細は H.264 を [USE_H264.md](doc/USE_H264.md) をお読みください
+Read H.264 [USE_H264.md] (doc / USE_H264.md) for more information
 
-## 今後
+## from now on
 
-- サイマルキャスト対応
+- Simulcast compatible
 
-## 有償での優先実装
+## Priority implementation for a fee
 
-- Windows 版 NVIDIA VIDEO CODEC SDK による H.264 エンコーダ対応
-    - [スロースネットワークス株式会社](http://www.sloth-networks.co.jp) 様
-- WebRTC's Statistics 対応
-    - 企業名非公開
-- Windows 版 NVIDIA VIDEO CODEC SDK による H.264 デコーダ対応
-    - [スロースネットワークス株式会社](http://www.sloth-networks.co.jp) 様
-- Android 版対応
-    - [株式会社KDDIテクノロジー](https://kddi-tech.com/) 様
+--Supports H.264 encoder by NVIDIA VIDEO CODEC SDK for Windows
+    -[Sloth Networks Co., Ltd.] (http://www.sloth-networks.co.jp)
+--Compatible with WebRTC's Statistics
+    --Company name private
+--Supports H.264 decoder by NVIDIA VIDEO CODEC SDK for Windows
+    -[Sloth Networks Co., Ltd.] (http://www.sloth-networks.co.jp)
+--Compatible with Android version
+    -[KDDI Technology Corporation] (https://kddi-tech.com/)
 
-## 有償での優先実装が可能な機能一覧
+## List of functions that can be preferentially implemented for a fee
 
-**詳細は Discord またはメールにてお問い合わせください**
+** Please contact us by Discord or email for details **
 
-- オープンソースでの公開が前提
-- 可能であれば企業名の公開
-    - 公開が難しい場合は `企業名非公開` と書かせていただきます
+--Assuming release in open source
+--Publication of company name if possible
+--If it is difficult to publish, we will write `company name private`.
 
-### プラットフォーム
+### platform
 
-- Ubuntu 18.04 への対応
+-Support for Ubuntu 18.04
 
 ### NVIDIA VIDEO CODEC SDK
 
-- VP8 のハードウェアデコードへの対応
-- VP9 のハードウェアデコードへの対応
-- Ubuntu 18.04 への対応
+--Support for VP8 hardware decoding
+--Support for VP9 hardware decoding
+--Support for Ubuntu 18.04
 
-### INTEL Media SDK 対応
+### Supports INTEL Media SDK
 
-- H.264 のハードウェアエンコードへの対応
-- VP8 のハードウェアエンコードへの対応
-- VP9 のハードウェアエンコードへの対応
-- H.264 のハードウェアデコードへの対応
-- VP8 のハードウェアデコードへの対応
-- VP9 のハードウェアデコードへの対応
+--Support for H.264 hardware encoding
+--Support for VP8 hardware encoding
+--Support for VP9 hardware encoding
+--Support for H.264 hardware decoding
+--Support for VP8 hardware decoding
+--Support for VP9 hardware decoding
 
-## ライセンス
+## license
 
 Apache License 2.0
 
