@@ -14,6 +14,11 @@ Ant Media Server - Scalable, Real-Time and Developer-friendly(API-First) - offer
 -Live Video Monitoring and Surveillance
 -Open Source Live Streaming Software
 
+## How to use
+-use "arm64 sora"" unity package for plugin of android.
+-download from "https://github.com/ant-media/sora-unity-sdk/suites/5282471410/artifacts/163542881" and use "libwebrtc sora"" unity package for plugin of IOS.
+-There are multiple scenes for “publish” (send only), “play” (receive only) and “conference” (multi_send_receive) 
+
 ## Licenses
 Please visit out website for Licenses and choice as per your uses.(https://antmedia.io/)
 
